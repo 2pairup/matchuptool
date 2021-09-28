@@ -636,13 +636,13 @@ window.skins={};
 	__extends(mainPageSkin, _super);
 	function mainPageSkin() {
 		_super.call(this);
-		this.skinParts = ["enterBtn","importBtn","nameInput","msgLabel"];
+		this.skinParts = ["enterBtn","importBtn","nameInput","msgLabel","versionLabel"];
 		
 		this.height = 720;
 		this.minHeight = 50;
 		this.minWidth = 100;
 		this.width = 1280;
-		this.elementsContent = [this._Rect1_i(),this.enterBtn_i(),this.importBtn_i(),this.nameInput_i(),this.msgLabel_i()];
+		this.elementsContent = [this._Rect1_i(),this.enterBtn_i(),this.importBtn_i(),this.nameInput_i(),this.msgLabel_i(),this.versionLabel_i()];
 	}
 	var _proto = mainPageSkin.prototype;
 
@@ -690,6 +690,15 @@ window.skins={};
 		t.textColor = 0xe50d0d;
 		t.x = 87;
 		t.y = 178;
+		return t;
+	};
+	_proto.versionLabel_i = function () {
+		var t = new eui.Label();
+		this.versionLabel = t;
+		t.text = "v1.0";
+		t.textColor = 0xffffff;
+		t.x = 1206;
+		t.y = 670;
 		return t;
 	};
 	return mainPageSkin;
