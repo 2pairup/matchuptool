@@ -30,8 +30,7 @@
 		"resource/eui_skins/VScrollBarSkin.exml",
 		"resource/eui_skins/VSliderSkin.exml",
 		"resource/skin/mainPageSkin.exml",
-		"resource/skin/resultPageSkin.exml",
-		"resource/skin/resultRowButtonSkin.exml"
+		"resource/skin/resultPageSkin.exml"
 	],
 	"path": "resource/default.thm.json"
 }
