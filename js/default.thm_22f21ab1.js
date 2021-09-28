@@ -697,11 +697,11 @@ window.skins={};
 	__extends(resultPageSkin, _super);
 	function resultPageSkin() {
 		_super.call(this);
-		this.skinParts = ["backBtn","previousBtn","nextBtn","pageNumberLbl","vLine","hLine","label","nameABLbl","assigneeABLbl","membershipABLbl","yrABLbl","starABLbl","stemABLbl","seasonABLbl","branchABLbl","constellationABLbl","actualABLbl","grpABInfo","nameALbl","assigneeALbl","membershipALbl","yrALbl","starALbl","stemALbl","seasonALbl","branchALbl","constellationALbl","actualALbl","grpA","nameBLbl","assigneeBLbl","membershipBLbl","yrBLbl","starBLbl","stemBLbl","seasonBLbl","branchBLbl","constellationBLbl","actualBLbl","grpB"];
+		this.skinParts = ["backBtn","previousBtn","nextBtn","pageNumberLbl","label","vLine","hLine","nameABLbl","assigneeABLbl","membershipABLbl","yrABLbl","starABLbl","stemABLbl","seasonABLbl","branchABLbl","constellationABLbl","actualABLbl","inAppABLbl","grpABInfo","nameALbl","assigneeALbl","membershipALbl","yrALbl","starALbl","stemALbl","seasonALbl","branchALbl","constellationALbl","actualALbl","inAppALbl","grpA","nameBLbl","assigneeBLbl","membershipBLbl","yrBLbl","starBLbl","stemBLbl","seasonBLbl","branchBLbl","constellationBLbl","actualBLbl","inAppBLbl","grpB","resultScrollerGrp","resultScroller"];
 		
 		this.minHeight = 50;
 		this.minWidth = 100;
-		this.elementsContent = [this._Rect1_i(),this.backBtn_i(),this.previousBtn_i(),this.nextBtn_i(),this.pageNumberLbl_i(),this._Group1_i()];
+		this.elementsContent = [this._Rect1_i(),this.backBtn_i(),this.previousBtn_i(),this.nextBtn_i(),this.pageNumberLbl_i(),this._Group1_i(),this.resultScroller_i()];
 	}
 	var _proto = resultPageSkin.prototype;
 
@@ -750,14 +750,119 @@ window.skins={};
 		var t = new eui.Group();
 		t.x = 83;
 		t.y = 41;
-		t.elementsContent = [this._Rect2_i(),this.vLine_i(),this.hLine_i(),this.label_i(),this.grpABInfo_i(),this.grpA_i(),this.grpB_i()];
+		t.elementsContent = [this._Rect2_i(),this.label_i(),this.vLine_i(),this.hLine_i(),this.grpABInfo_i(),this.grpA_i(),this.grpB_i()];
 		return t;
 	};
 	_proto._Rect2_i = function () {
 		var t = new eui.Rect();
 		t.fillColor = 0x5b4646;
-		t.height = 405;
+		t.height = 445;
 		t.width = 800;
+		return t;
+	};
+	_proto.label_i = function () {
+		var t = new eui.Group();
+		this.label = t;
+		t.elementsContent = [this._Label1_i(),this._Label2_i(),this._Label3_i(),this._Label4_i(),this._Label5_i(),this._Label6_i(),this._Label7_i(),this._Label8_i(),this._Label9_i(),this._Label10_i(),this._Label11_i()];
+		return t;
+	};
+	_proto._Label1_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "Name";
+		t.x = 10;
+		t.y = 10.000000000000007;
+		return t;
+	};
+	_proto._Label2_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "Assignee";
+		t.x = 10;
+		t.y = 50;
+		return t;
+	};
+	_proto._Label3_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "Membership";
+		t.x = 10;
+		t.y = 90;
+		return t;
+	};
+	_proto._Label4_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "年份";
+		t.x = 10;
+		t.y = 130;
+		return t;
+	};
+	_proto._Label5_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "星座";
+		t.x = 10;
+		t.y = 169.99999999999997;
+		return t;
+	};
+	_proto._Label6_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "天干";
+		t.x = 10;
+		t.y = 210;
+		return t;
+	};
+	_proto._Label7_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "四季";
+		t.x = 10;
+		t.y = 250;
+		return t;
+	};
+	_proto._Label8_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "⽇元地⽀";
+		t.x = 10;
+		t.y = 290;
+		return t;
+	};
+	_proto._Label9_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "星宿";
+		t.x = 10;
+		t.y = 330;
+		return t;
+	};
+	_proto._Label10_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "Actual %";
+		t.x = 10;
+		t.y = 370;
+		return t;
+	};
+	_proto._Label11_i = function () {
+		var t = new eui.Label();
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.text = "In app";
+		t.x = 10;
+		t.y = 410;
 		return t;
 	};
 	_proto.vLine_i = function () {
@@ -769,7 +874,7 @@ window.skins={};
 	_proto._Rect3_i = function () {
 		var t = new eui.Rect();
 		t.fillColor = 0xd81313;
-		t.height = 405;
+		t.height = 445;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.width = 5;
@@ -780,7 +885,7 @@ window.skins={};
 	_proto._Rect4_i = function () {
 		var t = new eui.Rect();
 		t.fillColor = 0xD81313;
-		t.height = 405;
+		t.height = 445;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.width = 5;
@@ -791,7 +896,7 @@ window.skins={};
 	_proto._Rect5_i = function () {
 		var t = new eui.Rect();
 		t.fillColor = 0xD81313;
-		t.height = 405;
+		t.height = 445;
 		t.scaleX = 1;
 		t.scaleY = 1;
 		t.width = 5;
@@ -801,7 +906,7 @@ window.skins={};
 	_proto.hLine_i = function () {
 		var t = new eui.Group();
 		this.hLine = t;
-		t.elementsContent = [this._Rect6_i(),this._Rect7_i(),this._Rect8_i(),this._Rect9_i(),this._Rect10_i(),this._Rect11_i(),this._Rect12_i(),this._Rect13_i(),this._Rect14_i(),this._Rect15_i()];
+		t.elementsContent = [this._Rect6_i(),this._Rect7_i(),this._Rect8_i(),this._Rect9_i(),this._Rect10_i(),this._Rect11_i(),this._Rect12_i(),this._Rect13_i(),this._Rect14_i(),this._Rect15_i(),this._Rect16_i()];
 		return t;
 	};
 	_proto._Rect6_i = function () {
@@ -914,107 +1019,21 @@ window.skins={};
 		t.y = 405;
 		return t;
 	};
-	_proto.label_i = function () {
-		var t = new eui.Group();
-		this.label = t;
-		t.elementsContent = [this._Label1_i(),this._Label2_i(),this._Label3_i(),this._Label4_i(),this._Label5_i(),this._Label6_i(),this._Label7_i(),this._Label8_i(),this._Label9_i(),this._Label10_i()];
-		return t;
-	};
-	_proto._Label1_i = function () {
-		var t = new eui.Label();
+	_proto._Rect16_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0xD81313;
+		t.height = 2;
 		t.scaleX = 1;
 		t.scaleY = 1;
-		t.text = "Name";
-		t.x = 10;
-		t.y = 10.000000000000007;
-		return t;
-	};
-	_proto._Label2_i = function () {
-		var t = new eui.Label();
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.text = "Assignee";
-		t.x = 10;
-		t.y = 50;
-		return t;
-	};
-	_proto._Label3_i = function () {
-		var t = new eui.Label();
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.text = "Membership";
-		t.x = 10;
-		t.y = 90;
-		return t;
-	};
-	_proto._Label4_i = function () {
-		var t = new eui.Label();
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.text = "年份";
-		t.x = 10;
-		t.y = 130;
-		return t;
-	};
-	_proto._Label5_i = function () {
-		var t = new eui.Label();
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.text = "星座";
-		t.x = 10;
-		t.y = 169.99999999999997;
-		return t;
-	};
-	_proto._Label6_i = function () {
-		var t = new eui.Label();
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.text = "天干";
-		t.x = 10;
-		t.y = 210;
-		return t;
-	};
-	_proto._Label7_i = function () {
-		var t = new eui.Label();
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.text = "四季";
-		t.x = 10;
-		t.y = 250;
-		return t;
-	};
-	_proto._Label8_i = function () {
-		var t = new eui.Label();
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.text = "⽇元地⽀";
-		t.x = 10;
-		t.y = 290;
-		return t;
-	};
-	_proto._Label9_i = function () {
-		var t = new eui.Label();
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.text = "星宿";
-		t.x = 10;
-		t.y = 330;
-		return t;
-	};
-	_proto._Label10_i = function () {
-		var t = new eui.Label();
-		t.scaleX = 1;
-		t.scaleY = 1;
-		t.text = "Actual %";
-		t.x = 10;
-		t.y = 370;
+		t.width = 800;
+		t.y = 445;
 		return t;
 	};
 	_proto.grpABInfo_i = function () {
 		var t = new eui.Group();
 		this.grpABInfo = t;
 		t.x = 205;
-		t.elementsContent = [this.nameABLbl_i(),this.assigneeABLbl_i(),this.membershipABLbl_i(),this.yrABLbl_i(),this.starABLbl_i(),this.stemABLbl_i(),this.seasonABLbl_i(),this.branchABLbl_i(),this.constellationABLbl_i(),this.actualABLbl_i()];
+		t.elementsContent = [this.nameABLbl_i(),this.assigneeABLbl_i(),this.membershipABLbl_i(),this.yrABLbl_i(),this.starABLbl_i(),this.stemABLbl_i(),this.seasonABLbl_i(),this.branchABLbl_i(),this.constellationABLbl_i(),this.actualABLbl_i(),this.inAppABLbl_i()];
 		return t;
 	};
 	_proto.nameABLbl_i = function () {
@@ -1147,11 +1166,24 @@ window.skins={};
 		t.y = 374;
 		return t;
 	};
+	_proto.inAppABLbl_i = function () {
+		var t = new eui.Label();
+		this.inAppABLbl = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.text = "---";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.width = 195;
+		t.y = 414;
+		return t;
+	};
 	_proto.grpA_i = function () {
 		var t = new eui.Group();
 		this.grpA = t;
 		t.x = 405;
-		t.elementsContent = [this.nameALbl_i(),this.assigneeALbl_i(),this.membershipALbl_i(),this.yrALbl_i(),this.starALbl_i(),this.stemALbl_i(),this.seasonALbl_i(),this.branchALbl_i(),this.constellationALbl_i(),this.actualALbl_i()];
+		t.elementsContent = [this.nameALbl_i(),this.assigneeALbl_i(),this.membershipALbl_i(),this.yrALbl_i(),this.starALbl_i(),this.stemALbl_i(),this.seasonALbl_i(),this.branchALbl_i(),this.constellationALbl_i(),this.actualALbl_i(),this.inAppALbl_i()];
 		return t;
 	};
 	_proto.nameALbl_i = function () {
@@ -1284,11 +1316,24 @@ window.skins={};
 		t.y = 374;
 		return t;
 	};
+	_proto.inAppALbl_i = function () {
+		var t = new eui.Label();
+		this.inAppALbl = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.text = "---";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.width = 195;
+		t.y = 414;
+		return t;
+	};
 	_proto.grpB_i = function () {
 		var t = new eui.Group();
 		this.grpB = t;
 		t.x = 605;
-		t.elementsContent = [this.nameBLbl_i(),this.assigneeBLbl_i(),this.membershipBLbl_i(),this.yrBLbl_i(),this.starBLbl_i(),this.stemBLbl_i(),this.seasonBLbl_i(),this.branchBLbl_i(),this.constellationBLbl_i(),this.actualBLbl_i()];
+		t.elementsContent = [this.nameBLbl_i(),this.assigneeBLbl_i(),this.membershipBLbl_i(),this.yrBLbl_i(),this.starBLbl_i(),this.stemBLbl_i(),this.seasonBLbl_i(),this.branchBLbl_i(),this.constellationBLbl_i(),this.actualBLbl_i(),this.inAppBLbl_i()];
 		return t;
 	};
 	_proto.nameBLbl_i = function () {
@@ -1421,5 +1466,77 @@ window.skins={};
 		t.y = 374;
 		return t;
 	};
+	_proto.inAppBLbl_i = function () {
+		var t = new eui.Label();
+		this.inAppBLbl = t;
+		t.scaleX = 1;
+		t.scaleY = 1;
+		t.size = 28;
+		t.text = "---";
+		t.textAlign = "center";
+		t.verticalAlign = "middle";
+		t.width = 195;
+		t.y = 414;
+		return t;
+	};
+	_proto.resultScroller_i = function () {
+		var t = new eui.Scroller();
+		this.resultScroller = t;
+		t.height = 400;
+		t.width = 250;
+		t.x = 957;
+		t.y = 40;
+		t.viewport = this.resultScrollerGrp_i();
+		return t;
+	};
+	_proto.resultScrollerGrp_i = function () {
+		var t = new eui.Group();
+		this.resultScrollerGrp = t;
+		t.layout = this._VerticalLayout1_i();
+		return t;
+	};
+	_proto._VerticalLayout1_i = function () {
+		var t = new eui.VerticalLayout();
+		return t;
+	};
 	return resultPageSkin;
+})(eui.Skin);generateEUI.paths['resource/skin/resultRowButtonSkin.exml'] = window.skins.resultRowButtonSkin = (function (_super) {
+	__extends(resultRowButtonSkin, _super);
+	function resultRowButtonSkin() {
+		_super.call(this);
+		this.skinParts = ["btnEnter","lblMark"];
+		
+		this.minHeight = 50;
+		this.minWidth = 100;
+		this.elementsContent = [this._Rect1_i(),this.btnEnter_i(),this.lblMark_i()];
+	}
+	var _proto = resultRowButtonSkin.prototype;
+
+	_proto._Rect1_i = function () {
+		var t = new eui.Rect();
+		t.fillColor = 0xc16464;
+		t.height = 60;
+		t.width = 197;
+		return t;
+	};
+	_proto.btnEnter_i = function () {
+		var t = new eui.Button();
+		this.btnEnter = t;
+		t.label = "Name";
+		t.x = 5;
+		t.y = 5;
+		return t;
+	};
+	_proto.lblMark_i = function () {
+		var t = new eui.Label();
+		this.lblMark = t;
+		t.size = 22;
+		t.text = "0";
+		t.textAlign = "center";
+		t.width = 67;
+		t.x = 117;
+		t.y = 18;
+		return t;
+	};
+	return resultRowButtonSkin;
 })(eui.Skin);
