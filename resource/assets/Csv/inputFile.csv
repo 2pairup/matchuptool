@@ -1,4 +1,5 @@
-﻿Name,Assignee,Membership,性別,出生日期,年份,星座,天干,四季,日元地支,星宿,Actions,Chatroom
+﻿ Auto Matching Informations,,,,,,,,,,,,
+Name,Assignee,Membership,性別,出生日期,年份,星座,天干,四季,日元地支,星宿,Actions,Chatroom
 F1,Ashley,Basic,F,15/11/1985,丑,天蠍,戊,冬,午,斗,dislike,no
 F2,Sally,Basic,F,21/9/1995,亥,處女,乙,秋,卯,轸,like,yes
 F3,Josie,Basic,F,3/5/1989,巳,金牛,戊,春,亥,胃,like,yes
@@ -19,3 +20,11 @@ M7,Ashley,Advance,M,24/12/1989,巳,山羊,戊,冬,午,箕,like,yes
 M8,Sally,VIP,M,7/11/1989,巳,天蠍,辛,秋,未,奎,like,no
 M9,Cat,VIP,M,6/3/1981,酉,雙魚,癸,春,未,奎,like,no
 M10,Jamie,VIP,M,17/3/1993,酉,雙魚,丁,春,酉,危,,
+B1,Renee,VIP,M,5/6/1987,卯,雙子,乙,夏,酉,亢,亢,
+B2,Renee,Basic,M,5/6/1976,辰,雙子,戊,夏,子,轸,轸,
+B3,Jami,Advance,M,4/6/2004,申,雙子,甲,夏,申,箕,箕,
+b4 Adv3,Josie,Advance,M,14/8/1990,午,獅子,辛,秋,亥,毕,毕,
+G1,Renee,Advance,F,5/6/1970,戌,雙子,丙,夏,辰,井,井,
+G2,Jami,Advance,F,19/12/1997,丑,射手,乙,冬,未,轸,轸,
+G3,Jami,VIP,F,20/3/1988,辰,雙魚,甲,春,戌,胃,胃,
+G4 VIP,Josie,VIP,F,14/8/1990,午,獅子,辛,秋,亥,毕,毕,
