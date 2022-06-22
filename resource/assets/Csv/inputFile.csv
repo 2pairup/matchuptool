@@ -1,19 +1,20 @@
 ﻿ Name,Assignee,Membership,性別,生日日期,年份,星座,天干,四季,日元地支,星宿
+F1(Basic),Yannie,Basic,F,25/7/1993,酉,獅子,丁,夏,未,角
 F2(1Adv),Shan,Advance,F,1/10/1990,午,天秤,己,秋,亥,壁
 F3(3Adv),Skyler,Advance,F,25/4/1988,辰,金牛,庚,春,戌,张
 F4(VIP),Cynthia,VIP,F,3/1/1993,申,山羊,甲,冬,申,参
-F1(Basic),Yannie,Basic,F,25/7/1993,酉,獅子,丁,夏,未,角
-F8(VIP),Ada,VIP,F,17/4/1986,寅,白羊,辛,春,卯,星
 F5(VIP),Chantel,VIP,F,11/8/1997,丑,獅子,乙,夏,酉,尾
 F6(Basic),Sally,Basic,F,29/10/1995,亥,天蠍,癸,秋,巳,斗
 F7(3Adv),Jamie,Advance,F,21/9/1996,子,處女,辛,秋,酉,女
+F8(VIP),Ada,VIP,F,17/4/1986,寅,白羊,辛,春,卯,星
+F9(VIP),Minnie,Advance,F,6/5/1999,卯,金牛,戊,夏,午,女
 M1(VIP),Ashley,VIP,M,28/6/1985,丑,巨蟹,戊,夏,戌,氐
-M7(Basic),Heidi,Basic,M,13/2/1994,戌,水瓶,庚,春,午,娄
 M2(3Adv),Ada,Advance,M,11/5/1988,辰,金牛,丙,夏,寅,奎
-M8(3Adv),Chantel,Advance,M,28/11/1989,巳,射手,壬,冬,辰,斗
 M3(Basic),Karl,Basic,M,19/3/1991,未,雙魚,戊,春,子,昴
 M4(1Adv),Josie,Advance,M,9/6/1986,寅,雙子,甲,夏,申,鬼
 M5(1Adv),Renee,Advance,M,2/12/1987,卯,射手,乙,冬,酉,胃
 M6(Basic),steve,Basic,M,21/8/1992,申,獅子,己,夏,巳,参
-,,,,,,,,,,
+M7(Basic),Heidi,Basic,M,13/2/1994,戌,水瓶,庚,春,午,娄
+M8(3Adv),Chantel,Advance,M,28/11/1989,巳,射手,壬,冬,辰,斗
+M9(4Adv),Cat,Advance,M,25/9/1981,酉,天秤,丙,秋,午,角
 ,,,,,,,,,,
